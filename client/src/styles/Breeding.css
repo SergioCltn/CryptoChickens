@@ -1,0 +1,61 @@
+ .leftbox {
+     float: left;
+     width: 40%;
+    min-width: 200px;
+ }
+
+ .middlebox {
+     float: left;
+     width: 20%;
+    min-width: 100px;
+ }
+
+ .rightbox {
+     float: right;
+     width: 40%;
+     min-width: 200px;
+ }
+ 
+ .breed {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 60%;
+        max-width: 300px;
+        margin: auto;
+            padding: 10px;
+            min-width: 150px;
+
+ }
+ .breedDiv{
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top:100px;
+ }
+
+ .breedButton{
+    height: 150px;
+    width: 150px;
+ }
+    .breedButton:hover{
+            background-color: #9fd14f;
+            transition: 0.5s;
+    }
+.around {
+    display: flex;
+        flex-direction: column;
+        
+
+ }
+
+ .around2 {
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ .todo{
+    padding-top: 20px;
+ }

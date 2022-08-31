@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+    align-items: center;
+    min-width: 250px;
+    /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+    flex: 50%;
+    padding-right: 5px;
+    align-items: center;
+    min-width: 250px;
+    /* Should be removed. Only for demonstration */
+}
+
+.column2 input{
+    width: 70%;
+}
+
+.column2 button {
+    height: 50px;
+    width: 200px;
+    margin:auto;
+}
+
+.imagen{
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.imagen h1 {
+    margin-top: 10px;
+    color:black;
+    margin-bottom: 10px;
+}
+
+.wins{
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+    color:black;
+    min-width: 300px;
+}
+
+.loses{
+    margin-top: 10px;
+        background-color: #f1f1f1;
+        border: 2px solid grey;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 10px;
+        color: black;
+        min-width: 300px;
+}
+.fieldNames{
+    display:flex;
+    align-items: left;
+}
+
+.changeName{
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+    width: 90%;
+    border-radius: 10px;
+    display:flex;
+    align-items:left;
+    min-width: 300px;
+}
+
+.level{
+    margin-top: 10px;
+        background-color: #f1f1f1;
+        border: 2px solid grey;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 10px;
+        color: black;
+        min-width: 300px;
+}
+.dna {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+    color: black;
+    min-width: 300px;
+}
+
+.owner {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+    color: black;
+    min-width: 300px;
+    height:30px;
+    font-size: 15px;
+}
+
+.gestationTime{
+    margin-top: 10px;
+        background-color: #f1f1f1;
+        border: 2px solid grey;
+        width: 50%;
+        border-radius: 10px;
+        color: black;
+    min-width: 300px;
+        margin-left: 25%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.breedingTime {
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+    width: 50%;
+    border-radius: 10px;
+    color: black;
+    min-width: 300px;
+    margin-left: 25%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.readyTime{
+            margin-top: 10px;
+            background-color: #f1f1f1;
+            border: 2px solid grey;
+            width: 50%;
+            border-radius: 10px;
+            color: black;
+                min-width: 300px;
+                    margin-left: 25%;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+}
+
+.transferFrom{
+        margin-top: 10px;
+            background-color: #f1f1f1;
+            border: 2px solid grey;
+            width: 90%;
+            border-radius: 10px;
+            display: flex;
+            align-items: left;
+            min-width: 300px;
+}
+
+.gusanos{
+    margin-top: 10px;
+        background-color: #f1f1f1;
+        border: 2px solid grey;
+        width: 50%;
+        border-radius: 10px;
+        color: black;
+        min-width: 300px;
+        margin-left: 25%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.gusano{
+    margin: 10px;
+    margin-right: 20px;
+    background-color: rgb(198, 241, 5);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+        border: 2px solid grey;
+        cursor: pointer;
+    
+}
+
+.gusano:hover{
+    background-color: #f1f1f1;
+    border: 2px solid grey;
+    transition: 0.5s;
+}
+
+.gusano h5{
+    color: rgb(0, 0, 0);
+}

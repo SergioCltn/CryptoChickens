@@ -1,0 +1,80 @@
+.all {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.mint {
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.chickens{
+        display: flex;
+            justify-content: center;
+
+            height: 30vh;
+            width: 90vw;
+            
+}
+
+a {
+    text-decoration: none;
+}
+
+.chicken{
+    margin: 10px;
+    width: 30vw;
+    height: 40vh;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.minting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    width: 35vw;
+    background-color: rgb(167, 164, 29);
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 450px;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+}
+
+input{
+    margin: 10px;
+    padding: 10px;
+        border-radius: 10px;
+
+}
+
+.card {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+}
+
+.mintingButton:hover{
+    background-color: #dad8ee;
+}
+
+

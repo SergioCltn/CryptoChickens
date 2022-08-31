@@ -1,0 +1,56 @@
+
+
+    .noChickens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+
+.chickenAllies {
+    background-color: #15a81c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 90vw;
+    min-width: 1600px;
+    border-radius: 10px;
+    border : 2px solid grey;
+}
+
+.battle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+button {
+    margin :10px;
+    height: 50px;
+        width: 50%;
+        
+    
+}
+.buttonBattle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chickenEnemies{
+        background-color: #c51e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 90vw;
+            min-width: 1600px;
+            border-radius: 10px;
+            border: 2px solid grey;
+}
+@media (max-width: 1200px) {
+    .battle-container {
+        flex-direction: column;
+    }
+}
