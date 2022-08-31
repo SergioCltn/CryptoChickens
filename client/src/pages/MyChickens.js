@@ -52,7 +52,6 @@ const MyChickens = ({ abi, contractAddress, getTime }) => {
   const handleSuccess = async (tx) => {
     await tx.wait(1);
     updateBalance();
-    console.log(tx);
     handleNewNotification(tx);
   };
 
@@ -97,7 +96,6 @@ const MyChickens = ({ abi, contractAddress, getTime }) => {
             onClick={async function () {
               await withdrawUser({
                 onSuccess: handleSuccess,
-                onError: (error) => console.log(error),
               });
             }}
             disabled={isLoading || isFetching || balance === 0}

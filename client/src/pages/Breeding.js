@@ -106,7 +106,6 @@ const Breeding = ({ abi, contractAddress, getTime }) => {
   };
 
   const handleNewNotificationError = (tx) => {
-    console.log(tx);
     dispatch({
       type: "error",
       message: "Chicken in Cooldown",
