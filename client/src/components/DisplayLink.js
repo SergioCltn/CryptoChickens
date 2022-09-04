@@ -19,8 +19,8 @@ const DisplayLink = ({ chicken }) => {
                     auxChicken.gestationTime === "Not an egg"
                       ? require(`../images/chicken-${
                           Math.floor(auxChicken.dna / 100) % 10
-                        }.svg`)
-                      : require("../images/chicken-egg.svg").default
+                        }.png`)
+                      : require("../images/chicken-egg.png")
                   }
                   alt={auxChicken.name}
                   style={{ height: "150px" }}

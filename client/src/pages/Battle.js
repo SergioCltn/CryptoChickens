@@ -161,9 +161,7 @@ const Battle = ({ abi, contractAddress, getTime }) => {
                   >
                     <div>
                       <img
-                        src={require("../images/evilchicken-" +
-                          difficulty +
-                          ".png")}
+                        src={require("../images/evilchicken.png")}
                         alt={difficulty}
                         style={{ height: "150px" }}
                       />

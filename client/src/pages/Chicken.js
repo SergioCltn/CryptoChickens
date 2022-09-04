@@ -152,8 +152,8 @@ const Chicken = ({ abi, contractAddress, getTime }) => {
                   chicken.gestationTime === "Not an egg"
                     ? require(`../images/chicken-${
                         Math.floor(chicken.dna / 100) % 10
-                      }.svg`)
-                    : require("../images/chicken-egg.svg").default
+                      }.png`)
+                    : require("../images/chicken-egg.png")
                 }
                 alt={chicken.name}
                 style={{ height: "300px" }}
@@ -250,7 +250,7 @@ const Chicken = ({ abi, contractAddress, getTime }) => {
                   >
                     <div>
                       <img
-                        src={require("../images/chicken-egg.svg").default}
+                        src={require("../images/worm-" + item + ".png")}
                         alt={item}
                         style={{ height: "50px" }}
                       />

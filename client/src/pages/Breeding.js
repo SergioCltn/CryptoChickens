@@ -150,8 +150,8 @@ const Breeding = ({ abi, contractAddress, getTime }) => {
                         auxChicken.gestationTime === "Not an egg"
                           ? require(`../images/chicken-${
                               Math.floor(auxChicken.dna / 100) % 10
-                            }.svg`)
-                          : require("../images/chicken-egg.svg").default
+                            }.png`)
+                          : require("../images/chicken-egg.png")
                       }
                       alt={auxChicken.name}
                       style={{ height: "150px" }}
@@ -208,8 +208,8 @@ const Breeding = ({ abi, contractAddress, getTime }) => {
                         secondChicken.gestationTime === "Not an egg"
                           ? require(`../images/chicken-${
                               Math.floor(secondChicken.dna / 100) % 10
-                            }.svg`)
-                          : require("../images/chicken-egg.svg").default
+                            }.png`)
+                          : require("../images/chicken-egg.png").default
                       }
                       alt={secondChicken.name}
                       style={{ height: "150px" }}
