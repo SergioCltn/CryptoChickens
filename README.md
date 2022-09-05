@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# TFG
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desarrollo de videojuegos DeFi y su sostenibilidad económica
 
-## Available Scripts
+## INSTALACIÓN
 
-In the project directory, you can run:
+Se necesita tener instalado:
 
-### `npm start`
+- Git.
+- NodeJS 14.15.3 o superior
+- NPM 6.14.9 o superior
+- Truffle v5.3.7
+- Web3.js v1.3.6
+- Ganache (versión aplicación de escritorio preferiblemente)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En primer lugar, descargamos o clonamos el proyecto en nuestra máquina, lo podemos hacer con el siguiente comando:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    git clone https://github.com/SergioCltn/CryptoChickens.git
 
-### `npm test`
+Ahora, nos cambiamos al nuevo directorio CryptoChickens con:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    cd CryptoChickens
 
-### `npm run build`
+Instalamos o actualizamos todos los paquetes necesarios:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Directorio Raíz:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Directorio /client
 
-### `npm run eject`
+    cd client
+    npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Una vez instaladas todas las dependencias, desde el directorio raíz haciendo uso de truffle compilaremos nuestro contrato:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    truffle compile
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Este comando crea una nueva carpeta dentro del directorio src con el contrato compilado a JSON.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A continuación es necsario poner en marcha Ganache. Para ello, desde la interfaz gráfica podemos crear un workspace o darle a 'quickstart'.
 
-## Learn More
+En caso de crear un workspace personal, es necesario modificar tambien el fichero truffle-config.js para que haga uso de la configuración que usamos.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Con Ganache funcionando, procedemos a desplegar el contrato en la cadena de bloques:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    truffle migrate
 
-### Code Splitting
+En ejecuciones posteriores haremos uso de la opción `--reset` poder relanzar el contrato en la cadena de bloques como nuevo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Finalmente, accediendo al directorio /client lanzamos la aplicación
 
-### Analyzing the Bundle Size
+    cd client
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Se nos abrirá una ventana o pestaña de nuestro navegador con la aplicación alojada en http://localhost:3000/
 
-### Making a Progressive Web App
+Una vez abierta la aplicación debemos importar alguna cuenta de las creadas por Ganache haciendo uso de MetaMask.
+Es necesario configurar MetaMask añadiendo una nueva red RPC que apunte a http://127.0.0.1 con el chainID 5777
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Una vez tenemos alguna cuenta importada se podrán probar algunas funcionalidades, pero será necesario de al menos
+dos cuentas para poder simular todos los comportamientos desarrollados.
 
-### Advanced Configuration
+## TESTING
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Para poder ejecutar los test desarrollados en la aplicación necesitamos tener el entorno de Ganache activado,
+y haciendo ejecutamos el comando:
 
-### Deployment
+    truffle test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Y por defecto hará uso de la red de desarollo para hacer los tests.
