@@ -97,9 +97,9 @@ const Breeding = ({ abi, contractAddress, getTime }) => {
 
   const handleNewNotification = () => {
     dispatch({
-      type: "success",
-      message: "New breed completed",
-      title: "Enjoy your new chicken",
+      type: "info",
+      message: "Transaction Complete!",
+      title: "Transaction Notification",
       position: "topR",
       icon: "bell",
     });
@@ -108,8 +108,8 @@ const Breeding = ({ abi, contractAddress, getTime }) => {
   const handleNewNotificationError = (tx) => {
     dispatch({
       type: "error",
-      message: "Chicken in Cooldown",
-      title: "Can't breed",
+      message: "Transaction Failed!",
+      title: "Error Notification",
       position: "topR",
       icon: "bell",
     });

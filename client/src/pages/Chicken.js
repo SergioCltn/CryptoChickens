@@ -194,7 +194,9 @@ const Chicken = ({ abi, contractAddress, getTime }) => {
                               handleNewNotificationError(error),
                           });
                         }}
-                        disabled={isLoadingTransfer || isFetchingTransfer}
+                        disabled={
+                          isLoadingTransfer || isFetchingTransfer || !address
+                        }
                         text="Transfer owner"
                         theme="colored"
                         className="button"
@@ -221,7 +223,7 @@ const Chicken = ({ abi, contractAddress, getTime }) => {
                               handleNewNotificationError(error),
                           });
                         }}
-                        disabled={isLoading || isFetching}
+                        disabled={isLoading || isFetching || !nombre}
                         text="Change name"
                         theme="colored"
                         className="button"

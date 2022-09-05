@@ -105,8 +105,8 @@ const Minting = ({ abi, contractAddress, getTime }) => {
   const handleNewNotificationError = (tx) => {
     dispatch({
       type: "error",
-      message: "Breed em!",
-      title: "You can't mint more chickens!",
+      message: "Transaction Failed!",
+      title: "Error Notification",
       position: "topR",
       icon: "bell",
     });
@@ -134,7 +134,7 @@ const Minting = ({ abi, contractAddress, getTime }) => {
               onError: (error) => handleNewNotificationError(error),
             });
           }}
-          disabled={isLoading || isFetching}
+          disabled={isLoading || isFetching || !account}
           text="Create Random Chicken"
           theme="colored"
           className="mintingButton"

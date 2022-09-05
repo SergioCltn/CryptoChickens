@@ -96,8 +96,8 @@ const Battle = ({ abi, contractAddress, getTime }) => {
   const handleNewNotificationError = (tx) => {
     dispatch({
       type: "error",
-      message: "Chicken in Cooldown",
-      title: "Fight Failed",
+      message: "Transaction Failed!",
+      title: "Error Notification",
       position: "topR",
       icon: "bell",
     });
